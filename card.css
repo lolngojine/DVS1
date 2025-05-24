@@ -1,0 +1,117 @@
+/*card2 flip*/
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+  .flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+
+
+    
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+                  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgb(237, 249, 5);
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(
+      120deg,
+      rgb(14, 74, 242) 60%,
+      rgb(3, 222, 62) 88%,
+      rgb(244, 5, 5) 40%,
+      rgb(246, 243, 242) 48%
+    );
+    color: coral;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(
+      120deg,
+      rgb(253, 0, 0) 30%,
+      rgb(34, 8, 226) 88%,
+      rgb(255, 254, 252) 40%,
+      rgb(118, 229, 6) 78%
+    );
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+
+  /*rotate card
+  .rotate
+  {
+    color: navy;
+    background-color: magenta;
+    width: 30%;
+    margin: auto;
+    padding: 50px;
+    border-radius: 15%;
+  }
+  .title1
+  {
+    color: navy;
+    font-family: fantasy;
+    position: relative;
+    text-align: center;
+
+  }
+  .front
+  /*{
+    background: linear-gradient(
+      130deg
+      bisque 20%,
+      rgb(255,231,222) 58%,
+      rgb(233,144,201)
+
+
+    )
+  }
+    
+    {
+      background-color: yellow;
+      width: 40%;
+      text-align: center;
+
+    }
+    */

@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #333;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    color: #004B87; 
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #004B87;
+    outline: none;
+}
+
+.recover{
+    text-align:right;
+    font-size:1rem;
+    margin-bottom:1rem;
+
+}
+.recover a{
+    text-decoration:none;
+    color:rgb(29, 10, 241);
+}
+.recover a:hover{
+    color:rgb(60, 255, 0);
+    text-decoration:underline;
+}
+
+/* Error Messages */
+
+.error{
+    position:absolute;
+    left:2em;
+    bottom:-1em;
+}
+.error p{
+    color:red;
+    font-weight:500;
+    text-align:center;
+    font-size:14px;
+    background: transparent;
+}
+
+.error-main{
+    background-color:brown;
+    padding:0.5em 1em;
+    border-radius:12px;
+    width:80%;
+    margin:0 auto;
+    }
+    .error-main p{
+    color:white;
+    text-align:center;
+    }
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #137b21; 
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0c85e9;
+}
+
+/* Eye Icon */
+.password {
+    position: relative;
+}
+
+#eye {
+    position: absolute;
+    top: 62%;
+    right: 16px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Or Divider */
+.or {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Social Media Icons */
+.icons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icons i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #1226c0;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: #004B87;
+}
+
+/* Links Section */
+.links {
+    text-align: center;
+    font-size: 14px;
+}
+
+.links a {
+    color: #004B87;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}

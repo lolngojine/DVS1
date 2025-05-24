@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 65%;
+    background-image: url('photos/jkuat_l[1].jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Right Section with Form - NOW ON LEFT */
+.right-section {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1461d4;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Form Container */
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 2.5rem;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 0 40px 50px rgba(5, 5, 239, 0.8);
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 80vh;
+    margin: 200px;
+    margin-top: 5%;
+    padding-left: 50px;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 35px rgba(5, 232, 5, 0.852);
+}
+
+/* Form Title Section */
+.form-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-title .logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.form-title .logo:hover {
+    transform: scale(1.05);
+}
+
+.form-title h1 {
+    color: #1226c0;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #1226c0;
+    box-shadow: 0 0 0 3px rgba(18, 38, 192, 0.2);
+    outline: none;
+}
+
+/* Password Eye Icon */
+.password #eye {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #666;
+    cursor: pointer;
+}
+
+/* Recover Password Link */
+.recover {
+    text-align: right;
+    margin-bottom: 1.5rem;
+}
+
+.recover a {
+    color: #1226c0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.recover a:hover {
+    color: #1dd013;
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #117e1c, #0a5f8a);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #0a5f8a, #1226c0);
+    transform: translateY(-2px);
+}
+
+/* Or Divider */
+.or {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #666;
+    position: relative;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: #ddd;
+}
+
+.or::before {
+    left: 0;
+}
+
+.or::after {
+    right: 0;
+}
+
+/* Social Icons */
+.icons {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.icons a {
+    color: #1226c0;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #df0c0c;
+}
+
+/* Sign Up Link */
+.links {
+    text-align: center;
+    color: #666;
+}
+
+.links a {
+    color: #1226c0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #0a5f8a;
+    text-decoration: underline;
+}
+
+/* Error Messages */
+.error {
+    color: #d9534f;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.error-main {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    
+    .left-section {
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .right-section {
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+    }
+    
+    .container {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .form-title h1 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,169 @@
+#verify {
+    background-image: url('photos/key-3348307_1280.webp'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay to make content readable on background image */
+#verify::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: -1;
+}
+
+.verification-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.verification-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.verification-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.verification-form button {
+    background: #055705;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.verification-form button:hover {
+    background: #1206f1;
+    transform: translateY(-2px);
+}
+
+/* Results Container */
+.verification-results {
+    background: rgba(240, 240, 240, 0.95);
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.verification-results h3 {
+    text-align: center;
+    color: #055705;
+    margin-bottom: 30px;
+    font-size: 28px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #055705;
+}
+
+/* Student and Device Info Sections */
+.student-info, .device-info {
+    background: #ffffff;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.student-info h4, .device-info h4 {
+    color: #055705;
+    margin-bottom: 20px;
+    font-size: 22px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Grid Layout for Info */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-grid div {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.info-grid strong {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-grid p {
+    margin: 0;
+    color: #555;
+}
+
+.info-grid img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background: white;
+    margin-top: 10px;
+}
+
+/* Alert Messages */
+.alert.error {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+    border-left: 4px solid #c62828;
+    display: flex;
+    align-items: center;
+}
+
+.alert.error i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Responsive adjustments for verification */
+@media (max-width: 768px) {
+    #verify {
+        padding: 40px 15px;
+    }
+    
+    .verification-results {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
